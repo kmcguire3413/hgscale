@@ -1,0 +1,17 @@
+[package]
+name = "hgscale-shard"
+version = "0.1.0"
+authors = ["Leonard Kevin McGuire Jr. <kmcg3413@gmail.com>"]
+
+[profile.dev]
+debug-assertions=true
+
+[profile.release]
+debug-assertions=false
+
+[dependencies]
+hgscale-common = { path = "../common" }
+byteorder = "*"
+rust-crypto = "*"
+ws = "*"
+rand = "*"
